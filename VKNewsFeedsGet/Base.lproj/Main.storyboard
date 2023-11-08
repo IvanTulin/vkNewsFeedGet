@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CYG-A0-5o7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VKNewsFeedsGet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Clm-sr-4e6">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Clm-sr-4e6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CtU-lL-jlS"/>
+                            <constraint firstItem="Clm-sr-4e6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S7R-LI-bt5"/>
+                            <constraint firstItem="Clm-sr-4e6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bfJ-IT-tZO"/>
+                            <constraint firstItem="Clm-sr-4e6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sV0-dy-cW0"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AzS-UL-81t"/>
+                    <connections>
+                        <outlet property="webView" destination="Clm-sr-4e6" id="Mr0-Fi-BXu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Get News View Controller-->
+        <scene sceneID="tAS-gK-QYe">
+            <objects>
+                <viewController storyboardIdentifier="GetNewsViewController" id="yhT-CQ-j5y" customClass="GetNewsViewController" customModule="VKNewsFeedsGet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oFu-gS-OEK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nhS-re-c9K">
+                                <rect key="frame" x="0.0" y="59" width="393" height="610"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VK Новости " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMg-X6-5RR">
+                                <rect key="frame" x="121" y="739" width="151" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="7Dk-CT-h1v"/>
+                                    <constraint firstAttribute="width" constant="151" id="LVk-49-Cj1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5rb-vv-lkJ"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="iMg-X6-5RR" firstAttribute="top" secondItem="nhS-re-c9K" secondAttribute="bottom" constant="70" id="0aW-QD-LSs"/>
+                            <constraint firstItem="5rb-vv-lkJ" firstAttribute="bottom" secondItem="iMg-X6-5RR" secondAttribute="bottom" constant="46" id="EKl-8i-LU9"/>
+                            <constraint firstItem="nhS-re-c9K" firstAttribute="top" secondItem="5rb-vv-lkJ" secondAttribute="top" id="KBo-D5-wUc"/>
+                            <constraint firstItem="nhS-re-c9K" firstAttribute="leading" secondItem="5rb-vv-lkJ" secondAttribute="leading" id="Zt7-7a-snx"/>
+                            <constraint firstItem="5rb-vv-lkJ" firstAttribute="trailing" secondItem="iMg-X6-5RR" secondAttribute="trailing" constant="121" id="bMl-Ms-Kr6"/>
+                            <constraint firstItem="nhS-re-c9K" firstAttribute="trailing" secondItem="5rb-vv-lkJ" secondAttribute="trailing" id="gPI-u8-kUk"/>
+                            <constraint firstItem="iMg-X6-5RR" firstAttribute="leading" secondItem="5rb-vv-lkJ" secondAttribute="leading" constant="121" id="ujk-lL-W38"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nhS-re-c9K" id="wUi-mZ-Fga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5iz-0m-nlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.2213740458014" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EUN-Pr-Pcq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CYG-A0-5o7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nk0-Ic-2B5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SF3-b5-QsJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeS-BM-JZ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

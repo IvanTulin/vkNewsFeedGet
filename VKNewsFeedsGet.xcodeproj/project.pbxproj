@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7FF3C82AE3DCB500022451 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7FF3C72AE3DCB500022451 /* PhotoService.swift */; };
+		BA7FF3CB2AE3DCE800022451 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BA7FF3CA2AE3DCE800022451 /* Alamofire */; };
+		BA7FF3CE2AE3E33500022451 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7FF3CD2AE3E33500022451 /* ImageViewCell.swift */; };
+		BA7FF3D02AE3E3F500022451 /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7FF3CF2AE3E3F500022451 /* TextViewCell.swift */; };
+		BA84CFF22ACB3C2C000C4C31 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BA84CFF12ACB3C2C000C4C31 /* SDWebImageSwiftUI */; };
+		BA8966D32ACC375700CDD93E /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8966D22ACC375700CDD93E /* NewsCell.swift */; };
+		BAA1ADB12AD740EB00CE5EDF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BAA1ADB02AD740EB00CE5EDF /* Realm */; };
+		BAA1ADB32AD740EB00CE5EDF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BAA1ADB22AD740EB00CE5EDF /* RealmSwift */; };
+		BAA534B22AE9461700B47013 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = BAA534B12AE9461700B47013 /* PromiseKit */; };
 		BACECAC32ACAFBB7000563D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAC22ACAFBB7000563D4 /* AppDelegate.swift */; };
 		BACECAC52ACAFBB7000563D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAC42ACAFBB7000563D4 /* SceneDelegate.swift */; };
 		BACECAC72ACAFBB7000563D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAC62ACAFBB7000563D4 /* ViewController.swift */; };
@@ -16,6 +25,10 @@
 		BACECADA2ACAFBB8000563D4 /* VKNewsFeedsGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAD92ACAFBB8000563D4 /* VKNewsFeedsGetTests.swift */; };
 		BACECAE42ACAFBB8000563D4 /* VKNewsFeedsGetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAE32ACAFBB8000563D4 /* VKNewsFeedsGetUITests.swift */; };
 		BACECAE62ACAFBB8000563D4 /* VKNewsFeedsGetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAE52ACAFBB8000563D4 /* VKNewsFeedsGetUITestsLaunchTests.swift */; };
+		BACECAF32ACAFBF3000563D4 /* ModelNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAF22ACAFBF3000563D4 /* ModelNews.swift */; };
+		BACECAF52ACAFCE1000563D4 /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAF42ACAFCE1000563D4 /* NewsManager.swift */; };
+		BACECAF72ACB000A000563D4 /* GetNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAF62ACB000A000563D4 /* GetNewsViewController.swift */; };
+		BACECAFA2ACB00B6000563D4 /* SessionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACECAF92ACB00B6000563D4 /* SessionApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA7FF3C72AE3DCB500022451 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		BA7FF3CD2AE3E33500022451 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		BA7FF3CF2AE3E3F500022451 /* TextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
+		BA8966D22ACC375700CDD93E /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		BACECABF2ACAFBB7000563D4 /* VKNewsFeedsGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeedsGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACECAC22ACAFBB7000563D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BACECAC42ACAFBB7000563D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +66,10 @@
 		BACECADF2ACAFBB8000563D4 /* VKNewsFeedsGetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKNewsFeedsGetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACECAE32ACAFBB8000563D4 /* VKNewsFeedsGetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKNewsFeedsGetUITests.swift; sourceTree = "<group>"; };
 		BACECAE52ACAFBB8000563D4 /* VKNewsFeedsGetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKNewsFeedsGetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BACECAF22ACAFBF3000563D4 /* ModelNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNews.swift; sourceTree = "<group>"; };
+		BACECAF42ACAFCE1000563D4 /* NewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsManager.swift; sourceTree = "<group>"; };
+		BACECAF62ACB000A000563D4 /* GetNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsViewController.swift; sourceTree = "<group>"; };
+		BACECAF92ACB00B6000563D4 /* SessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA534B22AE9461700B47013 /* PromiseKit in Frameworks */,
+				BAA1ADB32AD740EB00CE5EDF /* RealmSwift in Frameworks */,
+				BA7FF3CB2AE3DCE800022451 /* Alamofire in Frameworks */,
+				BAA1ADB12AD740EB00CE5EDF /* Realm in Frameworks */,
+				BA84CFF22ACB3C2C000C4C31 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +102,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7A93D22AFBBA5E00D3E1A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BACECAF22ACAFBF3000563D4 /* ModelNews.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA7A93D32AFBBA7300D3E1A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BACECAC62ACAFBB7000563D4 /* ViewController.swift */,
+				BACECAF62ACB000A000563D4 /* GetNewsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BA7A93D42AFBBB2F00D3E1A9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA7FF3C72AE3DCB500022451 /* PhotoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA7A93D52AFBBB7300D3E1A9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BACECAF42ACAFCE1000563D4 /* NewsManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BA7FF3CC2AE3E30000022451 /* NewsCells */ = {
+			isa = PBXGroup;
+			children = (
+				BA7FF3CD2AE3E33500022451 /* ImageViewCell.swift */,
+				BA7FF3CF2AE3E3F500022451 /* TextViewCell.swift */,
+			);
+			path = NewsCells;
+			sourceTree = "<group>";
+		};
 		BACECAB62ACAFBB7000563D4 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +169,12 @@
 			children = (
 				BACECAC22ACAFBB7000563D4 /* AppDelegate.swift */,
 				BACECAC42ACAFBB7000563D4 /* SceneDelegate.swift */,
-				BACECAC62ACAFBB7000563D4 /* ViewController.swift */,
+				BACECAF92ACB00B6000563D4 /* SessionApp.swift */,
+				BA7A93D52AFBBB7300D3E1A9 /* Manager */,
+				BA7A93D22AFBBA5E00D3E1A9 /* Model */,
+				BA7A93D32AFBBA7300D3E1A9 /* ViewController */,
+				BA7A93D42AFBBB2F00D3E1A9 /* Service */,
+				BACECAF82ACB000F000563D4 /* News */,
 				BACECAC82ACAFBB7000563D4 /* Main.storyboard */,
 				BACECACB2ACAFBB8000563D4 /* Assets.xcassets */,
 				BACECACD2ACAFBB8000563D4 /* LaunchScreen.storyboard */,
@@ -127,6 +200,15 @@
 			path = VKNewsFeedsGetUITests;
 			sourceTree = "<group>";
 		};
+		BACECAF82ACB000F000563D4 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				BA8966D22ACC375700CDD93E /* NewsCell.swift */,
+				BA7FF3CC2AE3E30000022451 /* NewsCells */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +225,13 @@
 			dependencies = (
 			);
 			name = VKNewsFeedsGet;
+			packageProductDependencies = (
+				BA84CFF12ACB3C2C000C4C31 /* SDWebImageSwiftUI */,
+				BAA1ADB02AD740EB00CE5EDF /* Realm */,
+				BAA1ADB22AD740EB00CE5EDF /* RealmSwift */,
+				BA7FF3CA2AE3DCE800022451 /* Alamofire */,
+				BAA534B12AE9461700B47013 /* PromiseKit */,
+			);
 			productName = VKNewsFeedsGet;
 			productReference = BACECABF2ACAFBB7000563D4 /* VKNewsFeedsGet.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +304,12 @@
 				Base,
 			);
 			mainGroup = BACECAB62ACAFBB7000563D4;
+			packageReferences = (
+				BA84CFF02ACB3C2C000C4C31 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				BAA1ADAF2AD740EB00CE5EDF /* XCRemoteSwiftPackageReference "realm-swift" */,
+				BA7FF3C92AE3DCE800022451 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BAA534B02AE9461700B47013 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = BACECAC02ACAFBB7000563D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +353,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7FF3D02AE3E3F500022451 /* TextViewCell.swift in Sources */,
+				BACECAF32ACAFBF3000563D4 /* ModelNews.swift in Sources */,
 				BACECAC72ACAFBB7000563D4 /* ViewController.swift in Sources */,
+				BA7FF3C82AE3DCB500022451 /* PhotoService.swift in Sources */,
+				BACECAFA2ACB00B6000563D4 /* SessionApp.swift in Sources */,
+				BACECAF52ACAFCE1000563D4 /* NewsManager.swift in Sources */,
 				BACECAC32ACAFBB7000563D4 /* AppDelegate.swift in Sources */,
+				BACECAF72ACB000A000563D4 /* GetNewsViewController.swift in Sources */,
+				BA8966D32ACC375700CDD93E /* NewsCell.swift in Sources */,
+				BA7FF3CE2AE3E33500022451 /* ImageViewCell.swift in Sources */,
 				BACECAC52ACAFBB7000563D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +699,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA7FF3C92AE3DCE800022451 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		BA84CFF02ACB3C2C000C4C31 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		BAA1ADAF2AD740EB00CE5EDF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		BAA534B02AE9461700B47013 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA7FF3CA2AE3DCE800022451 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA7FF3C92AE3DCE800022451 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BA84CFF12ACB3C2C000C4C31 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA84CFF02ACB3C2C000C4C31 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		BAA1ADB02AD740EB00CE5EDF /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAA1ADAF2AD740EB00CE5EDF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		BAA1ADB22AD740EB00CE5EDF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAA1ADAF2AD740EB00CE5EDF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		BAA534B12AE9461700B47013 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAA534B02AE9461700B47013 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BACECAB72ACAFBB7000563D4 /* Project object */;
 }
